@@ -39,16 +39,13 @@ body{
   .form-group {
     margin-bottom: 20px;
   }
-  
-  
-  input[type="text"],
-  textarea {
+#email,#password{
     width: 90%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: auto;
-  }
+}
   
 select{
     font-weight: bold;
@@ -69,10 +66,10 @@ select{
 #forgot-link{
     text-align: center;
 }
-#open-registration-form {
+#open-registration-form, .signup-button {
     height: 40px;
     width: 240px;
-    margin: auto;
+    margin: 10px;
     border: none;
     border-radius: 6px;
     background-color: #42b72a;
@@ -81,7 +78,6 @@ select{
     cursor: pointer;
 }
 button:hover::before {
-    content: "Registration Form";
     position: absolute;
     top: -50px;
     left: 50%;
@@ -95,7 +91,6 @@ button:hover::before {
 }
 
 button::before {
-    content: "";
     position: absolute;
     top: -50px;
     left: 50%;
@@ -115,5 +110,36 @@ button::before {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    display: none; /* Initially hide the form */
+    display: none; 
+}
+.strt{
+    display: flex;
+    align-items: center;
+   
+}
+.strt img{
+    margin-left: 250px;
+}
+#firstName,#lastName {
+    width: 170px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+#new-email,#new-password{
+    width: 385px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#birthday{
+    width: 170px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: x-large;
 }
