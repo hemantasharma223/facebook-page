@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <table>
+                    <tr>
+                        <td class="firstCol">
+                            <img src="./img/dF5SId3UHWd.svg" alt="Facebook" id="logo">          
+                            <h1 id="fb-alt-txt">Connect with friends and the world around you on Facebook.</h1>
+                        </td>
+                        <td class="secondCol">
+                            <div class="login-container">
+                            <div class="form" id="form">
+                                <form>
+                                    <div class="form-group">
+                                      <input type="text" class="email" id="textInput" name="email" placeholder="Email or Phone Number">
+                                    </div>
+                                
+                                    <div class="form-group">
+                                      <input type="text" class="password" id="password" placeholder="Password" >
+                                    </div>
+
+                                    <div id="button"><input type="submit" value="Login" id="submit"/>
+                                    </div>
+                                    <a href="forgot.html" id="forgot-link"><p>Forgot Password?</p></a>
+                                    <hr>
+                                    
+                                        
+                                    
+                                  </form>
+                                  <button id="open-registration-form">SignUp</button>
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+        <div id="registration-form" class="hidden">
+            <form id="reg-form" class="reg-form">
+                <h1>Sign Up</h1>
+                <p>It's quick and easy.</p>
+                <hr>
+                <div class="form-group">
+                  <input type="text" class="email" id="textInput" name="email" placeholder="Email or Phone Number">
+                </div>
+            
+                <div class="form-group">
+                  <input type="text" class="password" id="password" placeholder="Password" >
+                </div>
+
+                <div id="button"><input type="submit" value="Login" id="submit"/>
+                </div>
+
+              </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
