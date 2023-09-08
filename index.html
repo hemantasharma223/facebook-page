@@ -20,18 +20,18 @@
                         <td class="secondCol">
                             <div class="login-container">
                             <div class="form" id="form">
-                                <form>
+                                <form action="login.php" method="post">
                                     <div class="form-group">
                                       <input type="text" class="email" id="email" name="email" placeholder="Email or Phone Number">
                                     </div>
                                 
                                     <div class="form-group">
-                                      <input type="text" class="password" id="password" placeholder="Password" >
+                                      <input type="password" class="password" name="password" id="password" placeholder="Password" >
                                     </div>
 
                                     <div id="button"><input type="submit" value="Login" id="submit"/>
                                     </div>
-                                    <a href="#" id="forgot-link"><p>Forgot Password?</p></a>
+                                    <a href="forgot.html" id="forgot-link"><p>Forgot Password?</p></a>
                                     <hr>
                                     
                                   </form>
@@ -46,30 +46,30 @@
     </div>
     
         <div id="registration-form" class="hidden">
-           <div class="strt" style=" height: 38px; width: 432px;">
-            <p style="font-size: xx-large; font-weight: bold; text-align: start;">Sign Up </p>
-            <button id="close-btn" style="background: none; border: none;" onclick="close()"><img src="./img/close.png" alt="Facebook Logo" class="fb-logo" style="border: 0;"></button>   
+           <div class="strt" style=" height: 38px; width: 432px;" >
+            <p style="font-size: xx-large; font-weight: bold; text-align: start; ">Sign Up </p>
+            <button id="close-btn" style="background: none; border: none;"><img src="./img/close.png" alt="Facebook Logo" class="fb-logo" style="border: 0;"></button>   
         </div>
         <p>It's quick and easy.</p> 
         <hr>
-            <form id="reg-form" class="reg-form">
+            <form id="reg-form" class="reg-form" action="signup.php" method="post">
                 <div class="container">
                     <div class="signup-form">
                        
                         <form>
                             <div class="reg-form">
-                                <input type="text" id="firstName" placeholder="First Name" required>
-                                <input type="text" id="lastName" placeholder="Last Name" required>
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
                             </div>
                             <div class="reg-form">
-                                <input type="text" id="new-email" placeholder="Mobile number or email address" required>
+                                <input type="text" id="new-email" name="new-email" placeholder="Mobile number or email address" required>
                             </div>
                             <div class="reg-form">
-                                <input type="password" id="new-password" placeholder="New Password" required>
+                                <input type="password" id="new-password" name="new-password" placeholder="New Password" required>
                             </div>
                             <div class="reg-form">
                                 <label style="font-size: larger; font-weight: bold;">Birthday: </label>
-                                <input type="date" id="birthday" required>
+                                <input type="date" id="birthday" name="birthday" required>
                             </div>
                             <div class="reg-form" style="font-size: larger; margin-top: 10px;">
                                 <label style="font-size: larger; font-weight: bold; margin-top: 10px;">Gender</label>
@@ -77,11 +77,23 @@
                                 <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
                                 <input type="radio" id="others" name="gender" value="others"> <label for="others">Others</label>
                             </div>
+                            
+                            <div class="reg-form" style="margin-top: 15px; font-size: large; font-weight: bold;">
+                                <h3 style="margin: 5px;">Captcha Verification</h3>
+                                <label>What is your childhood nickname ? </label>
+                                <input type="text" id="captcha-first" name="captcha-first" placeholder="Enter Your Answer" required>
+                                <br>
+                                <label>What is your favourite pet ? </label>
+                                <input type="text" id="captcha-second" name="captcha-second" placeholder="Enter Your Answer" required>
+                                <br>
+                                <label  >Where did your parents meet ? </label>
+                                <input type="text" id="captcha-third" name="captcha-third" placeholder="Enter Your Answer" required>
+                            </div>
                             <hr>
                             <div style="text-align: center;">
                             <p>By signing up, you agree to our Terms and Privacy Policy.</p>
                             <hr>
-                            <button type="submit" class="signup-button">Sign Up</button>
+                            <input type="submit" class="signup-button" value="Sign Up">
                         </div>
                         </form>
                         
