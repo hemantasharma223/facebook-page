@@ -66,7 +66,7 @@ select{
 #forgot-link{
     text-align: center;
 }
-#open-registration-form, .signup-button {
+#open-registration-form, .signup-button,#gotologin {
     height: 40px;
     width: 240px;
     margin: 7px 0 10px 0;
